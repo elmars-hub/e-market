@@ -48,14 +48,16 @@ export default function NavBarIcons() {
         className="cursor-pointer"
       />
 
-      <div className="cursor-pointer relative">
+      <div
+        className="cursor-pointer relative"
+        onClick={() => setIsCartOpen((prev) => !prev)}
+      >
         <Image
           src="/cart.png"
           alt=""
           width={22}
           height={22}
           className="cursor-pointer"
-          onClick={() => setIsCartOpen((prev) => !prev)}
         />
         <div className="absolute -top-4 -right-4 w-6 h-6 bg-[#f35c7a] rounded-full flex items-center text-sm justify-center text-white">
           2
